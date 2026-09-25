@@ -7,50 +7,43 @@
 body {
     background: #f7f4ef;
     font-family: Arial, sans-serif;
-    color: #171717;
-    padding: 40px;
+    padding: 20px;
 }
 
 .container {
-    max-width: 1100px;
+    width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 240px 230px;
-    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .box {
+    padding: 20px;
     border-radius: 15px;
-    padding: 28px;
-    overflow: hidden;
 }
 
 .welcome {
     background: #f9e8d4;
+    min-height: 300px;
 }
 
 .welcome h2 {
-    font-size: 31px;
-    line-height: 1;
-    margin-top: 35px;
+    margin-top: 30px;
+    font-size: 30px;
 }
 
-.welcome h2 span {
-    color: #d95727;
-    font-style: italic;
+.welcome span {
+    color: #d95b2b;
 }
 
 button {
-    border: none;
     background: #f4b942;
-    color: #171717;
-    padding: 14px 24px;
-    border-radius: 25px;
-    font-size: 15px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
     font-weight: bold;
-    margin-top: 28px;
-    cursor: pointer;
 }
 
 .main {
@@ -58,29 +51,22 @@ button {
     color: white;
     grid-column: 2 / 4;
     text-align: center;
-    padding-top: 55px;
+    min-height: 300px;
+    padding-top: 60px;
 }
 
 .main h1 {
-    font-size: 46px;
-    line-height: 1;
-    font-weight: normal;
-}
-
-.main h1 i {
-    font-weight: bold;
+    font-size: 40px;
 }
 
 .main p {
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 15px;
 }
 
 .stars {
     color: #ffd166;
     font-size: 25px;
-    margin-top: 20px;
-    letter-spacing: 4px;
+    margin-top: 15px;
 }
 
 .booking {
@@ -90,49 +76,33 @@ button {
 }
 
 .booking h2 {
-    font-size: 30px;
-    line-height: 1;
+    font-size: 28px;
     margin: 20px 0;
 }
 
 .booking-card {
     background: white;
-    border-radius: 18px;
-    padding: 20px;
-    margin-top: 25px;
-}
-
-.booking-card h3 {
-    font-size: 18px;
-    margin-bottom: 18px;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .booking-card label {
     display: block;
-    font-size: 12px;
-    color: #777;
     margin-top: 10px;
+    font-size: 12px;
 }
 
 .input {
-    background: #f6f6f6;
-    padding: 11px;
-    border-radius: 8px;
-    font-size: 12px;
+    background: #f5f5f5;
+    padding: 10px;
     margin-top: 5px;
+    border-radius: 5px;
 }
 
 .booking-card button {
     width: 100%;
     background: #d95b2b;
     color: white;
-    margin-top: 18px;
-}
-
-.booking > p {
-    font-size: 14px;
-    line-height: 1.4;
-    margin-top: 25px;
 }
 
 .food {
@@ -141,45 +111,43 @@ button {
 }
 
 .food h2 {
-    font-size: 30px;
-    line-height: .95;
-    margin-bottom: 25px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .food-card {
     background: white;
-    border-radius: 15px;
-    padding: 13px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .food-img {
-    width: 55px;
-    height: 55px;
-    border-radius: 12px;
+    width: 50px;
+    height: 50px;
     background: #f7e4cf;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .food-card h3 {
+    margin-left: 10px;
     font-size: 14px;
 }
 
 .food-card p {
-    color: #777;
+    margin-left: 10px;
+    color: gray;
     font-size: 10px;
-    margin-top: 4px;
 }
 
 .food-card strong {
     margin-left: auto;
-    font-size: 13px;
 }
 
 .menu {
@@ -190,22 +158,17 @@ button {
     display: flex;
     justify-content: space-between;
     color: #d95b2b;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 .menu h2 {
-    font-size: 28px;
-    line-height: .95;
     margin: 20px 0;
 }
 
 .menu-item {
     display: flex;
     justify-content: space-between;
-    padding: 11px 0;
+    padding: 10px 0;
     border-bottom: 1px solid #ddd;
-    font-size: 13px;
 }
 
 .menu-item b {
@@ -219,23 +182,11 @@ button {
 }
 
 .offer h2 {
-    font-size: 52px;
-    margin-top: 10px;
-}
-
-.offer p {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.offer h3 {
-    margin-top: 8px;
-    font-size: 15px;
+    font-size: 45px;
 }
 
 .offer button {
     background: #ffd166;
-    margin-top: 15px;
 }
 
 .review {
@@ -243,120 +194,90 @@ button {
 }
 
 .review h2 {
-    font-size: 26px;
-    line-height: 1;
+    font-size: 25px;
 }
 
-.review > p {
+.review p {
     color: #f4b942;
-    font-size: 20px;
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .customer {
     display: flex;
     align-items: center;
     margin-top: 20px;
-    gap: 10px;
 }
 
 .person {
-    background: #f4e6d5;
-    border-radius: 50%;
     width: 45px;
     height: 45px;
+    background: #f4e6d5;
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-size: 22px;
+    justify-content: center;
 }
 
 .customer b {
-    display: block;
-    font-size: 13px;
+    margin-left: 10px;
 }
 
-.customer small {
-    color: #777;
-    font-size: 10px;
-}
 .bottom {
     background: #d95b2b;
     color: white;
     grid-column: 3 / 5;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
+
 .food-stat {
     background: white;
-    color: #171717;
-    border-radius: 15px;
-    padding: 18px;
-    width: 180px;
-}
-.food-stat h3 {
-    font-size: 13px;
+    color: black;
+    padding: 15px;
+    border-radius: 12px;
+    width: 170px;
 }
 
 .food-stat p {
-    font-size: 30px;
     color: #d95b2b;
-    margin-top: 8px;
+    font-size: 28px;
     font-weight: bold;
+    margin-top: 5px;
 }
-.bottom h2 {
-    font-size: 31px;
-    line-height: .95;
-    font-weight: normal;
-}
-@media (max-width: 900px) {
 
-    body {
-        padding: 20px;
-    }
+
+@media (max-width: 900px) {
     .container {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
     }
+
     .main,
     .bottom {
         grid-column: span 2;
     }
-    .booking {
+
+    .booking,
+    .food {
         grid-column: auto;
         grid-row: auto;
     }
-    .food {
-        grid-row: auto;
-    }
 }
+
 @media (max-width: 600px) {
-
-    body {
-        padding: 12px;
-    }
-
     .container {
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 
     .box {
-        min-height: 250px;
-    }
-
-    .main {
-        min-height: 300px;
-    }
-
-    .main h1 {
-        font-size: 36px;
+        margin-bottom: 15px;
     }
 
     .bottom {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
+        display: block;
+    }
+
+    .food-stat {
+        margin-bottom: 15px;
     }
 }
